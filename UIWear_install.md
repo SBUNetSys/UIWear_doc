@@ -2,12 +2,12 @@
 
 ## 1. Flash Custom Android AOSP ROM on Nexus 5
 
-**WARNING: Please backup your data before flashing the phone.**
+**WARNING: Please backup your data before flashing the phone.
 
-0) Backup your personal data
+### 0) Backup your personal data
 
 
-1) Download 4 files: 
+### 1) Download ROM files: 
 
   **aosp_hammerhead-ota-eng.xujay.zip**: This is our customized ROM which enhances the functionalities of Accessibility mechanism.
 
@@ -18,12 +18,16 @@
   Google apps: at http://opengapps.org/. 
 
 ### 2) Entering Bootloader mode
-Power off your phone and boot into your phone's bootloader. Hold the power button, two volumn bottons at the same time for about 10 seconds before releasing them. 
+Power off your phone and boot into your phone's bootloader. 
+
+Hold the power button, two volumn bottons at the same time for about 10 seconds before releasing them. 
 
 ### 3) Use shell command 
-fastboot flash recovery <file path>
-to flash the TWRP recovery environment to your Android phone.
 
+Flashing the TWRP recovery environment to your Android phone.
+```
+fastboot flash recovery <file path>
+```
 ### 4) Use the volume down button to scroll to the "Recovery" option in bootloader. Press power button to select it.
 
 ### 5) In TWRP, click wipe in the menu, first wipe, then advanced wipe all folders. 
