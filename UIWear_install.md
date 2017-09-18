@@ -18,29 +18,36 @@
   Google apps: at http://opengapps.org/. 
 
 ### 2) Entering Bootloader mode
-Power off your phone and boot into your phone's bootloader. 
+* Power off your phone
+* Hold the power button, volume up, volume down bottons at the same time for about 10 seconds
+* Afterthen, the phone will reboot into bootloader mode
 
-Hold the power button, two volumn bottons at the same time for about 10 seconds before releasing them. 
+### 3) Flashing Recovery Environment
 
-### 3) Use shell command 
-
-Flashing the TWRP recovery environment to your Android phone.
+Flashing the TWRP recovery environment to your Android phone by using following command
 ```
 fastboot flash recovery <file path>
 ```
-### 4) Use the volume down button to scroll to the "Recovery" option in bootloader. Press power button to select it.
+### 4) Enter Recovery Mode
+* Use the volume up/down buttons to navigate to the "Recovery" option in bootloader. 
+* Press power button to select it.
 
-### 5) In TWRP, click wipe in the menu, first wipe, then advanced wipe all folders. 
+### 5) Wipe all the data
+In TWRP, click wipe in the menu, first wipe, then advanced wipe all folders. 
 
-### 6) Connect your phone to computer, use command
+### 6) Prepare ROM file on the phone
+Connect your phone to computer, use command
 adb push <file path> /sdcard/
 to upload the 3 zip files to your phone.
 
-### 7) Go back to the main menu of TWRP, click install, add zip file to the queue with the order: aosp, SuperSU, then opengapps. Then click install to install the ROM.
+### 7) Flashing ROM
+Go back to the main menu of TWRP, click install, add zip file to the queue with the order: aosp, SuperSU, then opengapps. Then click install to install the ROM.
 
-### 8) You can choose to wipe cache/Dalvik after the installation completes.
+### 8) Wipe data again
+You can choose to wipe cache/Dalvik after the installation completes.
 
-### 9) Reboot your phone and you should see the modified ROM installed on your phone.
+### 9) Reboot
+Reboot your phone and you should see the modified ROM installed on your phone.
 
 ## 2. Install UIWear on your phone and watch
 
