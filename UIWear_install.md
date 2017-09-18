@@ -5,9 +5,13 @@
 **WARNING: Please backup your data before flashing the phone.
 
 1) Download 4 files: 
+
 aosp_hammerhead-ota-eng.xujay.zip: This is our customized ROM which enhances the functionalities of Accessibility mechanism.
+
 BETA-SuperSU-v2.60-20151205163135.zip: For rooting the phone.
+
 twrp-3.1.1-0-hammerhead.img: https://dl.twrp.me/hammerhead/twrp-3.1.1-0-hammerhead.img.html
+
 Google apps: at http://opengapps.org/. 
 
 2) Before install the ROM, back up data in your phone. Power off your phone and boot into your phone's bootloader. Hold the power button, two volumn bottons at the same time for about 10 seconds before releasing them. 
