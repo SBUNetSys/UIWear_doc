@@ -7,7 +7,7 @@
 ### 0) Prerequisites
 * **Make sure you have a backup of your Nexus 5 data**
 * Ensure you have USB Debugging enabled on your Nexus 5
-* Make sure you have installed Android tools, i.e., adb, fastboot
+* Make sure you have installed Android tools on your PC, i.e., adb, fastboot
 * Unlock the Nexus 5 by following these steps: https://www.androidpit.com/how-to-unlock-nexus-5-bootloader
 
 ### 1) Download ROM files: 
