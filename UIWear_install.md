@@ -1,6 +1,6 @@
 # UIWear Installation Tutorial
 
-Custom ROM firmware installation
+## 1. Flash Custom Android AOSP ROM on Nexus 5
 
 *Before install our modfied ROM, you need to root you Android phone.
 
@@ -26,7 +26,6 @@ to upload the 3 zip files to your phone.
 
 9. Reboot your phone and you should see the modified ROM installed on your phone.
 
-
-Install UIWear on your phone and watch
+## Install UIWear on your phone and watch
 
 Simply click run in Android Studio and choose the corresponding device, UIWear will automatically installed on your device.
