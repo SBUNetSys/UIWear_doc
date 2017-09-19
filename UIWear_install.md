@@ -6,9 +6,9 @@
 
 ### 0) Prerequisites
 * **Make sure you have a backup of your Nexus 5 data**
-* Ensure you have USB Debugging enabled on your Nexus 5
-* Make sure you have installed Android tools on your PC, i.e., adb, fastboot
-* Unlock the Nexus 5 by following these steps: https://www.androidpit.com/how-to-unlock-nexus-5-bootloader
+* Ensure you have USB Debugging enabled on your Nexus 5.
+* Make sure you have installed Android tools on your PC, i.e., adb, fastboot.
+* Unlock the Nexus 5 by following these steps: https://www.androidpit.com/how-to-unlock-nexus-5-bootloader.
 
 ### 1) Download ROM files: 
 
@@ -21,9 +21,9 @@
 *  Google apps: at http://opengapps.org/. 
 
 ### 2) Entering Bootloader mode
-* Power off your phone
-* Hold the power button, volume up, volume down bottons simultaneously for around 10 seconds
-* After then, the phone will reboot into bootloader mode
+* Power off your phone.
+* Hold the power button, volume up, volume down bottons simultaneously for around 10 seconds.
+* After then, the phone will reboot into bootloader mode.
 
 ### 3) Flashing Recovery Environment
 
@@ -46,7 +46,7 @@ adb push <file_path> /sdcard/
 to upload the aosp, gapps, SuperSU files to your phone.
 
 ### 7) Flashing ROM
-* Go back to the main menu of TWRP, click install, 
+* Go back to the main menu of TWRP, click install.
 * Should add zip files to the installing queue by following the order: aosp -> SuperSU -> opengapps. 
 * Tap install to install the ROM.
 
@@ -54,8 +54,23 @@ to upload the aosp, gapps, SuperSU files to your phone.
 Click wipe cache/Dalvik option after the installation completes.
 
 ### 9) Reboot
-Reboot your phone and you should see the modified ROM installed on your phone.
+Reboot your phone and you should see the modified ROM installed on your phone. The first time to boot might take a while, please be patient.
 
 ## 2. Install UIWear on your phone and watch
 
 Simply click run in Android Studio and choose the corresponding device, UIWear will automatically installed on your device.
+
+## X. Troubleshooting
+
+### 1) I cannot enter Recovery Mode after choosing "Recovery" option in bootloader. 
+* Make sure you flash the TWRP recovery environment properly in the previous step.
+* If the phone starts an infinite reboot loop, try to enter the bootloader mode again when the phone is off and flash TWRP recovery environment again.
+
+### 2) I cannot install the zip files / I get error during installing zip files.
+* Check if the zip files is properly trasferred in the previous step.
+* If you choose a large version of gapps and get the error message of insufficient storage, try a smaller version of gapps.
+
+### 3) I get error message after rebooting of "google service stops". / I cannot login in Play Store.
+* Go to Setting-Apps, choose Google and Google Play and force stop them, try again after several hours.
+
+
