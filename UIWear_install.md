@@ -70,7 +70,10 @@ Simply click run in Android Studio and choose the corresponding device, UIWear w
 * Check if the zip files is properly trasferred in the previous step.
 * If you choose a large version of gapps and get the error message of insufficient storage, try a smaller version of gapps.
 
-### 3) I get error message after rebooting of "google service stops". / I cannot login in Play Store.
+### 3) I get error message after rebooting, which says "Google play service stops". / I cannot login in Play Store. / I cannot successfully pair my phone and watch. / The connection between my phone and watch is not stable.
 * Go to Setting-Apps, choose Google and Google Play and force stop them, try again after several hours.
+* Watch pairing need Google play service works. Try the method above and pair your watch again.
+
+
 
 
