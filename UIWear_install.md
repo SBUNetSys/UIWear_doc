@@ -62,7 +62,7 @@ Simply click run in Android Studio and choose the corresponding device, UIWear w
 
 ## 3. Configure UIWear - phone side
 
-### 1) Open service
+### 1) Start service
 Open the UIWear App, first click "Start Proxy", it will automatically jumps to Accessibility in Settings, Under Services, choose UIWear Accessibility Services, turn it on.
 
 ### 2) Choose Apps
@@ -80,7 +80,7 @@ Turn on Cache Status to achieve full use of UIWear.
 
 ## 4. Configure UIWear - watch side
 
-### 1) Open service
+### 1) Start service
 Open the UIWearProxy App, click "Start WearProxy" and exit.
 
 ### 2) Install corresponding apks
