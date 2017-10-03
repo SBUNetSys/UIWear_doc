@@ -27,10 +27,11 @@
 
 ### 3) Flashing Recovery Environment
 
-Flashing the TWRP recovery environment to your Android phone by using following command
+Flashing the TWRP recovery environment to your Android phone by using command:
 ```
 fastboot flash recovery <twrp_img_file_path>
 ```
+
 ### 4) Enter Recovery Mode
 * Use the volume up/down buttons to navigate to the "Recovery" option in bootloader. 
 * Press power button to select it.
@@ -39,11 +40,10 @@ fastboot flash recovery <twrp_img_file_path>
 In TWRP, click wipe in the menu, first wipe, then advanced wipe all folders. 
 
 ### 6) Prepare ROM file on the phone
-Connect your phone to computer, use command
+Connect your phone to computer, use the command below to upload the aosp, gapps, SuperSU files to your phone.
 ```
 adb push <file_path> /sdcard/
 ```
-to upload the aosp, gapps, SuperSU files to your phone.
 
 ### 7) Flashing ROM
 * Go back to the main menu of TWRP, click install.
@@ -58,7 +58,40 @@ Reboot your phone and you should see the modified ROM installed on your phone. T
 
 ## 2. Install UIWear on your phone and watch
 
-Simply click run in Android Studio and choose the corresponding device, UIWear will automatically installed on your device.
+Simply click run in Android Studio and choose the corresponding device, UIWear will automatically installed on your devices.
+
+## 3. Configure UIWear - phone side
+
+### 1) Open service
+Open the UIWear App, first click "Start Proxy", it will automatically jumps to Accessibility in Settings, Under Services, choose UIWear Accessibility Services, turn it on.
+
+### 2) Choose Apps
+In "Select App", choose the apps you want to use with UIWear.
+
+### 3) Upload preference files
+* Each app has its corresponding preference files. 
+* They are necessary for the connection between phone and watch. Use the following command to upload these files.
+```
+adb push <preference_file_path> /sdcard/UIWear/<app_domain>/Preferences
+```
+
+### 4) Allow cache
+Turn on Cache Status to achieve full use of UIWear.
+
+## 4. Configure UIWear - watch side
+
+### 1) Open service
+Open the UIWearProxy App, click "Start WearProxy" and exit.
+
+### 2) Install corresponding apks
+* Each phone app need an compainon watch app pre-installed on the watch to let the proxy work. 
+* Use the following command to install watch apks on your watch.
+```
+adb install <apk_file_path>
+```
+
+### 3) Set connection
+When it is the first use, phone app must start first to set connection between phone and watch.
 
 ## X. Troubleshooting
 
